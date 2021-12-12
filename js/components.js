@@ -6355,6 +6355,10 @@ function Preloader({
   this.start = () => {
     window.dispatchEvent(new CustomEvent('arts/preloader/start'));
 
+	setTimeout(() => {
+		$('.logo-animated').addClass('on');
+	}, 500);
+
     if (!this.$target.length) {
       return;
     }

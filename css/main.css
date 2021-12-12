@@ -12382,4 +12382,121 @@ small, .small {
   background-color: var(--color-gray-1);
 } 
 
+/* ======================================================================== */
+/* 117. animated logo */
+/* ======================================================================== */
+
+.logo-animated {
+  font-family: 'Cinzel';
+}
+
+.logo-animated span.text:first-child {
+  font-size: 82px;
+}
+
+.logo-animated span.logo-text {
+  font-size: 74px;
+  opacity: 0;
+  transition: opacity 0.4s ease-in;
+}
+
+.logo-animated.on span.logo-text {
+  opacity: 1;
+}
+
+.logo-animated .logo-container {
+  position: relative;
+}
+
+.logo-animated .logo-container .logo-button {
+  border-radius: 54px;
+  display: inline-block;
+  height: 80px;
+  overflow: hidden;
+  position: relative;
+  top: 8px;
+  width: 146px;
+}
+
+.logo-animated .logo-container .logo-background-outer {
+  background-image: linear-gradient(to left, #333, #666);
+  border-radius: 54px;
+  height: 100%;
+  padding: 4px;
+  transition: background-image 0.7s ease-in;
+  width: 100%;
+}
+
+.logo-animated .logo-container .logo-background-inner {
+  background-image: linear-gradient(to right, #333, #666);
+  border-radius: 54px;
+  height: 100%;
+  transition: background-image 0.7s ease-in;
+}
+
+.logo-animated .logo-container .circle-outer {
+  background-image: linear-gradient(to left, #a6a8ab, #FFF);
+  border-radius: 50%;
+  display: flex;
+  height: 58px;
+  margin: 0 6px;
+  padding: 4px;
+  position: absolute;
+  left: 8px;
+  top: 11px;
+  transition: left 0.7s, background-image 0.7s ease-in;
+  width: 58px;
+  z-index: 10;
+}
+
+.logo-animated .logo-container .circle-inner {
+  background-image: linear-gradient(to right, #a6a8ab, #FFF);
+  border-radius: 50%;
+  display: flex;
+  flex-grow: 1;
+  transition: background-image 0.7s ease-in;
+}
+
+.logo-animated .logo-container .toggle-on {
+  left: 20px;
+  opacity: 0;
+}
+
+.logo-animated .logo-container .toggle-off {
+  opacity: 1;
+  right: 20px;
+}
+
+.logo-animated.on .logo-container .toggle-on {
+  left: 20px;
+  opacity: 1;
+}
+
+.logo-animated.on .logo-container .toggle-off {
+  opacity: 0;
+}
+
+.logo-animated .logo-container .toggle-on, 
+.logo-animated .logo-container .toggle-off {
+  font-size: 28px;
+  height: 80px;
+  position: absolute;
+  top: -41px;
+  transition: opacity 0.7s ease-in;
+  z-index: 5;
+}
+
+.logo-animated.on .logo-container .logo-background-outer {
+  background-image: linear-gradient(to right, #333, #666);
+}
+
+.logo-animated.on .logo-container .logo-background-inner {
+  background-image: linear-gradient(to left, #333, #666);
+}
+
+.logo-animated.on .logo-container .circle-outer {
+  left: 69px;
+}
+
+
 /*# sourceMappingURL=main.css.map */
