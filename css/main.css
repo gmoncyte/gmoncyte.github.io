@@ -12390,7 +12390,7 @@ small, .small {
   font-family: 'Cinzel';
 }
 
-.logo-animated span.text:first-child {
+.logo-animated span.logo-text:first-child {
   font-size: 82px;
 }
 
@@ -12498,5 +12498,120 @@ small, .small {
   left: 69px;
 }
 
+@media screen and (max-width: 991.98px) {
+  .logo-animated span.logo-text:first-child {
+    font-size: 57px;
+  }
+  
+  .logo-animated span.logo-text {
+    font-size: 52px;
+  }
+  
+  .logo-animated .logo-container .logo-button {
+    border-radius: 38px;
+    height: 56px;
+    top: 6px;
+    width: 106px;
+  }
+  
+  .logo-animated .logo-container .logo-background-outer {
+    border-radius: 28px;
+    padding: 2px;
+  }
+  
+  .logo-animated .logo-container .logo-background-inner {
+    border-radius: 38px;
+  }
+  
+  .logo-animated .logo-container .circle-outer {
+    height: 40px;
+    margin: 0 3px;
+    padding: 2px;
+    left: 6px;
+    top: 8px;
+    width: 40px;
+  }
+  
+  .logo-animated.on .logo-container .toggle-on {
+    left: 14px;
+  }
+
+  .logo-animated.on .logo-container .toggle-on {
+    left: 14px;
+  }
+  
+  .logo-animated .logo-container .toggle-off {
+    right: 18px;
+  }
+  
+  .logo-animated .logo-container .toggle-on, 
+  .logo-animated .logo-container .toggle-off {
+    font-size: 20px;
+    height: 56px;
+    top: -23px;
+  }
+  
+  .logo-animated.on .logo-container .circle-outer {
+    left: 52px;
+  }
+}
+
+@media screen and (max-width: 575.98px) {
+  .logo-animated span.logo-text:first-child {
+    font-size: 29px;
+  }
+  
+  .logo-animated span.logo-text {
+    font-size: 26px;
+  }
+  
+  .logo-animated .logo-container .logo-button {
+    border-radius: 19px;
+    height: 28px;
+    top: 3px;
+    width: 54px;
+  }
+  
+  .logo-animated .logo-container .logo-background-outer {
+    border-radius: 19px;
+    padding: 2px;
+  }
+  
+  .logo-animated .logo-container .logo-background-inner {
+    border-radius: 19px;
+  }
+  
+  .logo-animated .logo-container .circle-outer {
+    height: 20px;
+    margin: 0 3px;
+    padding: 2px;
+    left: 2px;
+    top: 4px;
+    width: 20px;
+  }
+  
+  .logo-animated .logo-container .toggle-on {
+    left: 8px;
+  }
+  
+  .logo-animated .logo-container .toggle-off {
+    right: 12px;
+  }
+  
+  .logo-animated.on .logo-container .toggle-on {
+    left: 8px;
+  }
+  
+  .logo-animated .logo-container .toggle-on, 
+  .logo-animated .logo-container .toggle-off {
+    font-size: 10px;
+    height: 28px;
+    top: -3px;
+  }
+  
+  .logo-animated.on .logo-container .circle-outer {
+    left: 26px;
+  }
+}
 
 /*# sourceMappingURL=main.css.map */
